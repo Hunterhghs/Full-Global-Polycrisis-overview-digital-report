@@ -1,0 +1,423 @@
+/* ============================================================
+   H Heuristics — Brand Token System v1.0
+   "Consulting/Economist meets British America"
+
+   The single source of truth for the H Heuristics visual identity.
+   Import this file into every project. Change tokens here to
+   rebrand every site simultaneously.
+
+   Color space: OKLCH (perceptually uniform)
+   Type: Cormorant Garamond (headings) + Source Sans 3 (body)
+   ============================================================ */
+
+/* ============================================================
+   TIER 1 — Raw Primitives (OKLCH color space)
+   ============================================================ */
+:root {
+  /* ── Midnight Navy (primary brand) ──
+     British heritage navy — deep, confident, not-quite-black.
+     Equivalent to ~#0c1929 in hex. */
+  --hh-navy-950: oklch(0.12 0.025 258);
+  --hh-navy-900: oklch(0.18 0.030 258);
+  --hh-navy-800: oklch(0.24 0.028 258);
+  --hh-navy-700: oklch(0.32 0.025 256);
+  --hh-navy-600: oklch(0.40 0.022 254);
+  --hh-navy-500: oklch(0.48 0.018 252);
+  --hh-navy-400: oklch(0.56 0.014 250);
+  --hh-navy-300: oklch(0.66 0.010 248);
+  --hh-navy-200: oklch(0.78 0.006 248);
+  --hh-navy-100: oklch(0.88 0.003 248);
+  --hh-navy-50:  oklch(0.95 0.002 248);
+
+  /* ── British Gold (accent) ──
+     Warm, restrained — not brassy. Like gilt on a book spine.
+     Equivalent to ~#b89b5e. */
+  --hh-gold-600: oklch(0.55 0.10 82);
+  --hh-gold-500: oklch(0.63 0.11 82);
+  --hh-gold-400: oklch(0.70 0.10 82);
+  --hh-gold-300: oklch(0.78 0.08 82);
+  --hh-gold-200: oklch(0.86 0.05 82);
+  --hh-gold-100: oklch(0.92 0.03 82);
+  --hh-gold-50:  oklch(0.96 0.015 85);
+
+  /* ── Warm Cream (surface) ──
+     Not stark white — like good paper stock. British warmth. */
+  --hh-cream-50:  oklch(0.99 0.002 90);
+  --hh-cream-100: oklch(0.97 0.004 88);
+  --hh-cream-200: oklch(0.94 0.006 86);
+  --hh-cream-300: oklch(0.90 0.008 84);
+
+  /* ── Neutrals ── */
+  --hh-neutral-950: oklch(0.10 0.002 260);
+  --hh-neutral-900: oklch(0.18 0.002 260);
+  --hh-neutral-800: oklch(0.28 0.002 260);
+  --hh-neutral-700: oklch(0.38 0.002 260);
+  --hh-neutral-600: oklch(0.48 0.002 260);
+  --hh-neutral-500: oklch(0.58 0.002 260);
+  --hh-neutral-400: oklch(0.68 0.002 260);
+  --hh-neutral-300: oklch(0.78 0.002 260);
+  --hh-neutral-200: oklch(0.88 0.002 260);
+  --hh-neutral-100: oklch(0.94 0.002 260);
+  --hh-neutral-50:  oklch(0.97 0.002 260);
+
+  /* ── Semantic — Data Viz Accents ──
+     Colorblind-safe, perceptually uniform. */
+  --hh-viz-blue:    oklch(0.52 0.16 250);
+  --hh-viz-teal:    oklch(0.52 0.13 195);
+  --hh-viz-green:   oklch(0.52 0.15 150);
+  --hh-viz-amber:   oklch(0.62 0.16 85);
+  --hh-viz-orange:  oklch(0.55 0.17 55);
+  --hh-viz-red:     oklch(0.48 0.19 25);
+  --hh-viz-purple:  oklch(0.48 0.15 310);
+  --hh-viz-pink:    oklch(0.55 0.14 350);
+
+  /* ── Semantic — Status ── */
+  --hh-success: oklch(0.55 0.15 150);
+  --hh-success-soft: oklch(0.92 0.04 150);
+  --hh-warning: oklch(0.62 0.16 85);
+  --hh-warning-soft: oklch(0.93 0.06 85);
+  --hh-danger:  oklch(0.50 0.18 25);
+  --hh-danger-soft:  oklch(0.93 0.04 25);
+  --hh-info:    oklch(0.52 0.16 250);
+  --hh-info-soft:    oklch(0.92 0.04 250);
+}
+
+/* ============================================================
+   TIER 2 — Semantic Role Tokens
+   ============================================================ */
+:root {
+  /* ── Brand ── */
+  --color-brand:         var(--hh-navy-900);
+  --color-brand-dark:    var(--hh-navy-950);
+  --color-brand-light:   var(--hh-navy-700);
+  --color-accent:        var(--hh-gold-500);
+  --color-accent-hover:  var(--hh-gold-400);
+  --color-accent-soft:   var(--hh-gold-100);
+
+  /* ── Surfaces ── */
+  --surface-bg:          var(--hh-cream-50);
+  --surface-card:        var(--hh-cream-100);
+  --surface-elevated:    #ffffff;
+  --surface-dark:        var(--hh-navy-900);
+  --surface-dark-card:   var(--hh-navy-800);
+
+  /* ── Text ── */
+  --text-primary:        var(--hh-navy-900);
+  --text-secondary:      var(--hh-navy-600);
+  --text-muted:          var(--hh-navy-400);
+  --text-inverse:        var(--hh-cream-50);
+  --text-accent:         var(--hh-gold-600);
+
+  /* ── Borders ── */
+  --border-subtle:       var(--hh-navy-100);
+  --border-default:      var(--hh-navy-200);
+  --border-strong:       var(--hh-navy-300);
+  --border-accent:       var(--hh-gold-400);
+}
+
+/* ============================================================
+   TIER 3 — Component Token Assignments
+   ============================================================ */
+:root {
+  /* ── Buttons ── */
+  --btn-primary-bg:       var(--color-brand);
+  --btn-primary-text:     var(--text-inverse);
+  --btn-primary-hover:    var(--color-brand-light);
+  --btn-secondary-bg:     transparent;
+  --btn-secondary-text:   var(--color-brand);
+  --btn-secondary-border: var(--border-default);
+  --btn-secondary-hover:  var(--hh-navy-50);
+  --btn-accent-bg:        var(--color-accent);
+  --btn-accent-text:      var(--color-brand-dark);
+  --btn-accent-hover:     var(--color-accent-hover);
+
+  /* ── Links ── */
+  --link-color:           var(--color-brand);
+  --link-hover:           var(--color-brand-light);
+  --link-accent:          var(--color-accent);
+  --link-underline-offset: 4px;
+  --link-underline-width:  2px;
+
+  /* ── Inputs ── */
+  --input-bg:             var(--surface-elevated);
+  --input-border:         var(--border-default);
+  --input-border-focus:   var(--color-brand);
+  --input-text:           var(--text-primary);
+  --input-placeholder:    var(--text-muted);
+
+  /* ── Header ── */
+  --header-bg:            rgba(255, 255, 255, 0.92);
+  --header-border:        var(--border-subtle);
+  --header-height:        72px;
+
+  /* ── Footer ── */
+  --footer-bg:            var(--color-brand-dark);
+  --footer-text:          var(--hh-navy-200);
+  --footer-text-muted:    var(--hh-navy-400);
+
+  /* ── Logo ── */
+  --logo-fill:            var(--color-brand);
+  --logo-max-height:      40px;
+  --logo-clearspace:      20px;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+:root {
+  /* ── Font Families ── */
+  --font-display: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+  --font-body:    'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', Roboto, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code',
+                  Consolas, monospace;
+
+  /* ── Type Scale (1.25 major third) ── */
+  --text-xs:   0.6875rem;   /* 11px — captions, labels */
+  --text-sm:   0.8125rem;   /* 13px — small body, table data */
+  --text-base: 1rem;        /* 16px — body */
+  --text-lg:   1.25rem;     /* 20px — large body, intro */
+  --text-xl:   1.5rem;      /* 24px — h4 */
+  --text-2xl:  1.875rem;    /* 30px — h3 */
+  --text-3xl:  2.25rem;     /* 36px — h2 */
+  --text-4xl:  3rem;        /* 48px — h1 */
+  --text-5xl:  3.75rem;     /* 60px — hero */
+  --text-6xl:  4.5rem;      /* 72px — hero large */
+
+  /* ── Font Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ── Line Heights ── */
+  --leading-tight:   1.15;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose:   1.8;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:    -0.02em;   /* Display headings */
+  --tracking-normal:   0;
+  --tracking-wide:     0.02em;
+  --tracking-label:    0.05em;    /* Uppercase labels */
+  --tracking-mono:     0.06em;    /* Monospace accent labels */
+}
+
+/* ============================================================
+   SPACING & LAYOUT
+   ============================================================ */
+:root {
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --container-max:   1280px;
+  --container-narrow: 800px;
+  --container-wide:  1440px;
+}
+
+/* ============================================================
+   BORDERS & RADII
+   ============================================================ */
+:root {
+  --radius-none:  0;
+  --radius-sm:    2px;    /* Data table cells, tight corners */
+  --radius-md:    4px;    /* Cards, buttons, inputs — Economist legacy */
+  --radius-lg:    8px;    /* Large panels, modals */
+  --radius-xl:    12px;   /* Feature cards */
+  --radius-full:  9999px; /* Pills, avatars */
+
+  --border-width-thin:  1px;
+  --border-width-thick: 2px;
+  --border-width-accent: 3px;  /* The gold left-border accent */
+}
+
+/* ============================================================
+   SHADOWS
+   ============================================================ */
+:root {
+  --shadow-none:    none;
+  --shadow-sm:      0 1px 2px rgba(12, 25, 41, 0.04);
+  --shadow-card:    0 1px 4px rgba(12, 25, 41, 0.06),
+                    0 1px 2px rgba(12, 25, 41, 0.04);
+  --shadow-elevated: 0 4px 12px rgba(12, 25, 41, 0.08),
+                     0 1px 3px rgba(12, 25, 41, 0.06);
+  --shadow-modal:   0 20px 40px rgba(12, 25, 41, 0.12),
+                    0 8px 16px rgba(12, 25, 41, 0.08);
+  --shadow-glow-gold: 0 0 20px rgba(184, 155, 94, 0.15);
+}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+:root {
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+  --duration-glacial: 600ms;
+}
+
+/* ============================================================
+   Z-INDEX
+   ============================================================ */
+:root {
+  --z-base:     0;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+[data-theme="dark"] {
+  /* ── Surfaces — remapped, not inverted ── */
+  --surface-bg:          var(--hh-navy-950);
+  --surface-card:        var(--hh-navy-900);
+  --surface-elevated:    var(--hh-navy-800);
+  --surface-dark:        var(--hh-navy-950);
+  --surface-dark-card:   var(--hh-navy-900);
+
+  /* ── Text — brighter, lower contrast against dark bg ── */
+  --text-primary:        var(--hh-cream-50);
+  --text-secondary:      var(--hh-navy-100);
+  --text-muted:          var(--hh-navy-300);
+  --text-inverse:        var(--hh-navy-950);
+  --text-accent:         var(--hh-gold-400);
+
+  /* ── Borders — visible against dark ── */
+  --border-subtle:       var(--hh-navy-700);
+  --border-default:      var(--hh-navy-600);
+  --border-strong:       var(--hh-navy-400);
+  --border-accent:       var(--hh-gold-500);
+
+  /* ── Brand gold — brighter in dark mode ── */
+  --color-accent:        var(--hh-gold-400);
+  --color-accent-hover:  var(--hh-gold-300);
+  --color-accent-soft:   oklch(0.25 0.04 82);
+
+  /* ── Shadows — don't work in dark, replaced with glow ── */
+  --shadow-card:     0 0 0 1px var(--border-subtle);
+  --shadow-elevated: 0 0 0 1px var(--border-default),
+                     0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-modal:    0 0 0 1px var(--border-default),
+                     0 20px 50px rgba(0, 0, 0, 0.5);
+
+  /* ── Component overrides ── */
+  --header-bg:          rgba(12, 25, 41, 0.92);
+  --input-bg:           var(--surface-card);
+  --btn-secondary-hover: var(--hh-navy-800);
+
+  /* ── Data viz — brighter in dark ── */
+  --hh-viz-blue:    oklch(0.62 0.14 250);
+  --hh-viz-teal:    oklch(0.62 0.11 195);
+  --hh-viz-green:   oklch(0.62 0.13 150);
+  --hh-viz-amber:   oklch(0.70 0.14 85);
+  --hh-viz-orange:  oklch(0.63 0.15 55);
+  --hh-viz-red:     oklch(0.56 0.17 25);
+  --hh-viz-purple:  oklch(0.58 0.13 310);
+  --hh-viz-pink:    oklch(0.63 0.12 350);
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--surface-bg);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Headings — Cormorant Garamond, tight leading ── */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+    color: var(--color-brand);
+    text-wrap: balance;
+  }
+
+  h1 { font-size: var(--text-4xl); letter-spacing: var(--tracking-tight); }
+  h2 { font-size: var(--text-3xl); letter-spacing: var(--tracking-tight); }
+  h3 { font-size: var(--text-2xl); }
+  h4 { font-size: var(--text-xl);  }
+  h5 { font-size: var(--text-lg); font-weight: var(--weight-medium); }
+  h6 { font-size: var(--text-base); font-weight: var(--weight-medium);
+       text-transform: uppercase; letter-spacing: var(--tracking-label);
+       color: var(--text-muted); }
+
+  /* ── Links — brand underline ── */
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-thickness: var(--link-underline-width);
+    text-underline-offset: var(--link-underline-offset);
+    text-decoration-color: var(--color-accent);
+    transition: color var(--duration-fast) var(--ease-out);
+  }
+  a:hover {
+    color: var(--link-hover);
+    text-decoration-color: var(--link-color);
+  }
+
+  /* ── Selection ── */
+  ::selection {
+    background-color: oklch(0.78 0.08 82 / 0.25);
+    color: var(--color-brand);
+  }
+
+  /* ── Focus ── */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ── Scrollbar ── */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-default) transparent;
+  }
+  ::-webkit-scrollbar { width: 7px; height: 7px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--border-default);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--border-strong);
+  }
+}

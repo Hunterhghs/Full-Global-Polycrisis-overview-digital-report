@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth System — The Missing Domains | Global Polycrisis Overview</title>
+<meta name="description" content="Biodiversity, ocean, land, freshwater, cryosphere, and pollution: the earth-system domains the six-node polycrisis map leaves out, with data from IPBES, IUCN, UNCCD, WRI, and the Global Tipping Points Report.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container masthead__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">HH</span>
+      <span>
+        <span class="brand__name">H Heuristics</span>
+        <span class="brand__sub">Global Polycrisis Overview</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Overview</a>
+      <a href="earth-system.html" class="active">Earth System</a>
+      <a href="secondary-impacts.html">Secondary Impacts</a>
+      <a href="systemic-domains.html">Systemic Domains</a>
+      <a href="data-sources.html">Data &amp; Sources</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="kicker">Earth System · Page 2</p>
+    <h1>Six of nine planetary boundaries are already breached.</h1>
+    <p class="lede">The six-node polycrisis map leaves out the biosphere, the ocean, the land, and the cryosphere. Those are the domains where feedback loops close — and where the damage stops being reversible.</p>
+    <div class="hero__meta">
+      <span><b>IPBES</b> 1M species at risk</span>
+      <span><b>UNCCD</b> 77.6% land drier</span>
+      <span><b>IUCN</b> −2% ocean oxygen</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-card__value">1M</div>
+      <div class="stat-card__label">Species threatened</div>
+      <div class="stat-card__note">IPBES Global Assessment, 2019.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">40.6%</div>
+      <div class="stat-card__label">Land is dryland</div>
+      <div class="stat-card__note">Excluding Antarctica; expanded 4.3M km² in 30 years.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">4B</div>
+      <div class="stat-card__label">People under water stress</div>
+      <div class="stat-card__note">At least one month a year, per WRI Aqueduct.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">1.4°C</div>
+      <div class="stat-card__label">Coral tipping point</div>
+      <div class="stat-card__note">Already being crossed at current warming, per GTP 2025.</div>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+
+  <section class="section">
+    <p class="kicker">Biosphere</p>
+    <h2>Biodiversity loss is the least reversible of the breaches</h2>
+    <div class="two-col">
+      <p class="dropcap">The IPBES Global Assessment found around one million animal and plant species threatened with extinction, many within decades — more than at any point in human history. Average native species abundance in most major land habitats has fallen by at least 20 percent, mostly since 1900. More than 40 percent of amphibian species, almost 33 percent of reef-forming corals, and more than a third of marine mammals are threatened.</p>
+      <p>The mechanism is not climate alone. Land-use change, overexploitation, pollution, and invasive species do most of the immediate damage; warming then amplifies it. IPBES found 22 of 44 assessed SDG-related targets undermined by negative nature trends. WWF's Living Planet Report 2024 put the decline in monitored wildlife populations at 73 percent between 1970 and 2020. Extinction is the one boundary breach with no recovery pathway on human timescales — a lost species does not come back when policy improves.</p>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <section class="section">
+    <p class="kicker">Ocean</p>
+    <h2>The ocean is losing oxygen and gaining acid at the same time</h2>
+    <div class="two-col">
+      <p>Ocean chemistry is changing on two fronts. Surface pH has dropped about 0.1 units since the pre-industrial era — roughly a 30 percent increase in acidity, per NOAA — with polar waters acidifying fastest. At the same time, the ocean has lost about 2 percent of its dissolved oxygen since the middle of the 20th century, and the volume of completely oxygen-depleted water has quadrupled since the 1960s, per IUCN.</p>
+      <p>The two stresses travel together: respiration consumes oxygen and releases carbon dioxide, so deoxygenation and acidification compound each other. Around 700 coastal sites were reporting low-oxygen conditions by 2011, up from 45 before the 1960s. Large predatory species — tuna, marlin, swordfish, sharks — are being squeezed into narrowing surface layers. Under a business-as-usual scenario, the ocean is projected to lose another 3–4 percent of its oxygen by 2100, with fisheries and the hundreds of millions of people who depend on them absorbing the cost.</p>
+    </div>
+    <div class="chart-panel">
+      <h4>Low-oxygen coastal sites reported worldwide</h4>
+      <p class="chart-caption">From 45 before the 1960s to about 700 by 2011. IUCN issues brief, December 2019.</p>
+      <div class="chart-wrap chart-wrap--sm"><canvas id="oxygenChart"></canvas></div>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <section class="section">
+    <p class="kicker">Land</p>
+    <h2>Aridity is the under-reported half of the land story</h2>
+    <div class="two-col">
+      <p class="dropcap">The UNCCD's drying-lands assessment found 77.6 percent of Earth's land became permanently drier over the three decades to 2020 compared with the previous 30 years. Drylands expanded by 4.3 million square kilometres — an area larger than India — and now cover 40.6 percent of all land outside Antarctica. By 2100, up to five billion people could be living in drylands under a high-emissions trajectory.</p>
+      <p>Aridity is not drought. Drought ends; aridity is a permanent shift in the water balance that does not reverse when the rains return. It degrades soil, cuts crop yields, and drives migration from exactly the regions the exposure dossier identifies as the polycrisis epicentre: Sub-Saharan Africa, the Middle East, and South Asia. IPBES had already estimated that land degradation affects 3.2 billion people. The aridity data shows the trend is structural, not cyclical.</p>
+    </div>
+    <div class="chart-panel">
+      <h4>Share of global land (excluding Antarctica)</h4>
+      <p class="chart-caption">Drylands now cover 40.6% of land; 77.6% of land became permanently drier over 1990–2020. UNCCD, 2024.</p>
+      <div class="chart-wrap chart-wrap--sm"><canvas id="landChart"></canvas></div>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <section class="section">
+    <p class="kicker">Freshwater</p>
+    <h2>One quarter of humanity lives where water runs out</h2>
+    <div class="two-col">
+      <p>WRI's Aqueduct Water Risk Atlas finds 25 countries — housing one quarter of the global population — face extremely high water stress, using at least 80 percent of their renewable supply every year. At least 50 percent of the world's population, around four billion people, live under highly water-stressed conditions for at least one month a year. In the Middle East and North Africa, 83 percent of the population is exposed to extreme stress; in South Asia, 74 percent.</p>
+      <p>The projection compounds the problem: by 2050, an additional one billion people are expected to live under extreme water stress even in an optimistic warming scenario, and water demand is projected to rise 20–25 percent. Thirty-one percent of global GDP — about $70 trillion — will be exposed to high water stress by 2050, up from $15 trillion in 2010. Water stress is where the earth-system boundary becomes a balance-sheet event.</p>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <section class="section">
+    <p class="kicker">Cryosphere &amp; Tipping Points</p>
+    <h2>The cryosphere is where the thresholds are already visible</h2>
+    <div class="two-col">
+      <p class="dropcap">The Global Tipping Points Report 2025 states the new reality plainly: at 1.4°C of warming, warm-water coral reefs are crossing their thermal tipping point, and parts of the polar ice sheets may have crossed thresholds that eventually commit the world to several metres of sea-level rise. Below 2°C, the Amazon rainforest is at risk of widespread dieback and the Atlantic Meridional Overturning Circulation (AMOC) is at risk of collapse.</p>
+      <p>These are not distant scenarios. Physics-based early-warning analysis published in Science Advances places the AMOC tipping point within 2025–2095 under the current trajectory. The Arctic has warmed nearly four times faster than the global average since 1979. Permafrost stores roughly twice the carbon currently in the atmosphere; as it thaws, it releases CO₂ and methane that accelerate the very warming causing the thaw. The State of the Cryosphere 2024 report concludes that current commitments, which lead toward well over 2°C, would bring irreversible ice loss with costs beyond adaptation limits for billions of people.</p>
+    </div>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <div class="insight-card__num">2°C</div>
+        <h4>Amazon &amp; AMOC risk line</h4>
+        <p>Below 2°C, the Amazon risks widespread dieback and the AMOC risks collapse, per GTP 2025.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-card__num">~4×</div>
+        <h4>Arctic amplification</h4>
+        <p>The Arctic has warmed nearly four times faster than the global average since 1979.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-card__num">2×</div>
+        <h4>Permafrost carbon</h4>
+        <p>Permafrost holds roughly twice the carbon currently in the atmosphere.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-rule"></div>
+
+  <section class="section">
+    <p class="kicker">Pollution</p>
+    <h2>Novel entities: the ninth boundary has already been crossed</h2>
+    <div class="two-col">
+      <p>The planetary-boundaries framework treats "novel entities" — plastics, synthetic chemicals, and other human-made materials — as its own boundary, and the 2023 update found it already breached. The world produces roughly 400 million tonnes of plastic waste a year, about 11 million tonnes of it entering the ocean annually, on track to triple by 2040. Plastic pollution has increased tenfold since 1980, per IPBES.</p>
+      <p>Chemical and nutrient pollution run on the same compounding logic. Excess nitrogen and phosphorus from agriculture drive the coastal eutrophication that accelerates deoxygenation. The pollution boundary and the ocean boundary are not separate problems; they are two ends of the same pipe.</p>
+    </div>
+    <div class="takeaway">
+      <p class="kicker">Earth system — binding read</p>
+      <h3>Read every boundary breach as a coupling, not a silo.</h3>
+      <p>Biodiversity loss, deoxygenation, aridity, and water stress are not parallel problems. Each one raises the probability and lowers the cost of breaching the others. The next page follows what happens when the couplings start firing.</p>
+    </div>
+    <div class="cta">
+      <div class="container" style="padding:0;">
+        <h2>Follow the loops</h2>
+        <p>Secondary Impacts maps the wildfires, feedback loops, and cascading failures that turn earth-system breaches into visible damage.</p>
+        <a class="btn btn--accent" href="secondary-impacts.html">Explore Secondary Impacts →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>H Heuristics</h4>
+        <p>Research and digital products on world development, the clean transition, and the polycrisis. This digital report synthesizes 30+ authoritative sources into a full-system overview.</p>
+      </div>
+      <div>
+        <h4>Report</h4>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="earth-system.html">Earth System</a></li>
+          <li><a href="secondary-impacts.html">Secondary Impacts</a></li>
+          <li><a href="systemic-domains.html">Systemic Domains</a></li>
+          <li><a href="data-sources.html">Data &amp; Sources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Colophon</h4>
+        <ul>
+          <li>Built with the H Heuristics brand system</li>
+          <li>Chart.js for interactive visuals</li>
+          <li>Deployed via GitHub Pages</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 H Heuristics</span>
+      <span>Full Global Polycrisis Overview</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  if (!window.Chart) return;
+
+  var ox = document.getElementById('oxygenChart');
+  if (ox) {
+    new Chart(ox, {
+      type: 'bar',
+      data: {
+        labels: ['Before 1960s', '2011'],
+        datasets: [{
+          label: 'Low-oxygen sites reported',
+          data: [45, 700],
+          backgroundColor: ['#0c1929', '#b89b5e'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, title: { display: true, text: 'Sites' } } }
+      }
+    });
+  }
+
+  var land = document.getElementById('landChart');
+  if (land) {
+    new Chart(land, {
+      type: 'doughnut',
+      data: {
+        labels: ['Drylands', 'Humid and other land'],
+        datasets: [{
+          data: [40.6, 59.4],
+          backgroundColor: ['#b89b5e', '#0c1929'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '62%',
+        plugins: { legend: { position: 'bottom' } }
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
